@@ -1,0 +1,54 @@
+Pollyfills (forEach, map, reduce, filter)
+
+const arr = [1,2,3,5,6]
+
+
+// Array.prototype.myMap = function(cb){
+//     let array = [];
+//     for(let i = 0 ; i < this.length ; i++){
+//         array.push(cb(this[i]));
+//     }
+//     return array;
+// };
+
+
+
+// const res = arr.myMap((num) => num*3);
+// console.log(res);
+
+// Array.prototype.myforEach = function(cb){
+//     for(let i = 0; i < this.length ; i++){
+//         cb(this[i]);
+//     }
+// }
+
+// arr.myforEach((num) => {
+//     console.log(num);
+// })
+
+
+// Array.prototype.myfilter = function(cb){
+//     let array = [];
+//     for(let i = 0 ; i < this.length ; i++){
+//         if(cb(this[i])){
+//             array.push(this[i]);
+//         }
+//     }
+//     return array;
+// }
+
+// const res = arr.myfilter((num) => num%2 !== 0)
+// console.log(res);
+
+// Array.prototype.myreduce = function(cb, initialvalue){
+//     let acc = initialvalue;
+//     for(let i = 0 ; i < this.length ; i++){
+//         acc = acc ? cb(acc,this[i]) : this[i];
+//     }
+//     return acc;
+// }
+
+// const res = arr.myreduce((acc,num) =>{
+//     return acc + num
+// },0);
+// console.log(res);
